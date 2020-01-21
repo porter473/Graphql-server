@@ -6,7 +6,7 @@ const cors = require('cors');
 
 app.use(cors());
 
- mongo.connect("url", { useUnifiedTopology: true , useNewUrlParser: true });
+ mongo.connect("mongodb://aman:test123@ds211099.mlab.com:11099/gql", { useUnifiedTopology: true , useNewUrlParser: true });
  mongo.connection.once('open', ()=>{
     console.log('Database Connected');
  })
